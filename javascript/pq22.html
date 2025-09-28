@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longestChar(arr) {
+            let length = 0;
+            str = '';
+            for(let elem of arr){
+                if(elem.length>length){
+                    length = elem.length;
+                    str=elem;
+                }
+            }
+            return str;
+        }
+        let arr=['india','japan','china','pakistan','uk'];
+        let res = longestChar(arr);
+        console.log(res);
+        
+    </script>
+</body>
+</html>

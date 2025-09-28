@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+      padding: 40px;
+    }
+    
+    h1 {
+      color: darkblue;
+    }
+
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      margin: 20px auto;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    
+    input {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    button {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+    }
+    .border-black{
+        border: 2px solid black;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+    .color-red{
+        color: red;
+    }
+    .dark-mode{
+        background: #000;
+        color:white;
+    }
+    .grey-mode{
+        color:yellow;
+        border:2px solid whitesmoke;
+        margin: 5px;
+    }
+    .light-mode{
+        background: white;
+        color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Hello DOM!</h1>
+  <p id="message">Yeh text change hoga JavaScript se.</p>
+
+  <div id="box"></div>
+
+
+    <input type="text" id="textInput" placeholder="Type something..."  name="search">
+
+  
+  <br><br>
+  <button id="changeTextBtn" class="btn">Change Text after 3 sec</button>
+  <button id="changeColorBtn" class="btn">Change Box Color</button>
+  <button id="hideShowBtn" class="btn">Hide/Show Box</button>
+  <button id="hideShowImg" class="btn">Hide/Show Img</button>
+  <button id="testing" class="btn">testing class list</button>
+  <h2 id="heading-2">heading 2</h2>
+  <script src="dom.js"></script>
+</body>
+</html>

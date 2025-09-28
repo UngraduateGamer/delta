@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Heading</h1>
+    <br>
+    <h3>Heading</h3>
+    <br>
+    <p>Paragraph</p>
+    <div>Div</div>
+    <input type="text">
+    <button>Button</button>
+    <script>
+        // this -- it is used in a callback of event handler of something. it refers to that something. that call in callback.
+        let div = document.querySelector("div");
+        let h1 = document.querySelector("h1");
+        let h3 = document.querySelector("h3");
+        let p = document.querySelector("p");
+        let button = document.querySelector("button");
+        let input = document.querySelector("input");
+       div.addEventListener('mouseenter',changeColor);
+        
+        h1.addEventListener('mouseenter',changeColor);
+        h3.addEventListener('mouseenter',changeColor);
+        p.addEventListener('mouseenter',changeColor);
+        button.addEventListener('mouseenter',changeColor);
+        input.addEventListener('keypress',(e)=>{
+            console.log(e);
+            
+        });
+        function changeColor(){
+            console.log("hey");
+            
+            this.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>

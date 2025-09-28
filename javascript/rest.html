@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //res -- yeh multiple argument leta hain or ek simgle array me store kr deta hain
+
+        function printSum(...res){// same syntax like spread
+           return res.reduce((first,next)=>{return next+first})
+        }
+        let res = printSum(1,23,45,1,54,5,1,251,5,15,2,1,21,21,2);
+        console.log(res);
+        
+    </script>
+</body>
+</html>

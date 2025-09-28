@@ -1,0 +1,22 @@
+h2{
+    color: #ff2f00;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 800;
+
+}
+span{
+    text-decoration: black double line-through;
+
+}
+button{
+    background: blue;
+    color: white;
+}
+p{
+    background: #000;
+    color: white;
+}
+
+

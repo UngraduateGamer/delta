@@ -1,0 +1,128 @@
+*{
+    font-family: "montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_box{
+    background: url(photo.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    
+}
+.sidebar_menu{
+    position: absolute;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    /* box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); */
+    line-height: 60px;
+    width: 100%;
+    left: 60px;
+}
+.sidebar_menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.btn_one i{
+    color: white !important;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    line-height: 60px;
+}
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 24px;
+    line-height: 60px;
+    position: absolute;
+    left: 260px;
+    /* opacity: 0; */
+    cursor: pointer;
+    color: white;
+    z-index: 15;
+}
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    padding: 14px 20px;
+    margin-top: 6px;
+    color: white;
+    
+
+}
+.sidebar_menu .menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 10px;
+}
+.sidebar_menu .social_media{
+    
+    position: absolute;
+    left: 25%;
+    bottom: 40px;
+}
+.sidebar_menu .social_media i{
+  color: white !important;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); 
+}
+.sidebar_menu .btn_two i:hover{
+    transform: scale(1.1);
+}
+.btn_one i:hover{
+    transform: scale(1.1);
+}
+.sidebar_menu .social_media i:hover{
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+/* panel */
+.panel{
+    height: 40px;
+    background: #232f3e;
+    width: 100%;
+    display: flex;
+}

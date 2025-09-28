@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+
+    <input type="text">
+    <script>
+        let p = document.querySelector("p");
+        let inp = document.querySelector("input")
+        inp.addEventListener("input",(event)=>{
+    
+            
+            let result = event.target.value // input.value
+            p.innerText = result;
+        })
+    </script>
+</body>
+</html>

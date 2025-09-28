@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.box{
+    background: grey;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}

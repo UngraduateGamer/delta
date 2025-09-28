@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let favMovie = "abc";
+        let guess = prompt("Guess the movie : ");
+        while((guess !== favMovie) && (guess!=='quit')) {
+            console.log("Wrong guess . Try again");
+            guess = prompt("Guess the movie again");
+        }
+        if(guess === favMovie){
+            console.log("Congratulation"); 
+        }
+        else{
+            console.log("not");
+        }
+    </script>
+</body>
+</html>

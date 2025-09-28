@@ -1,0 +1,28 @@
+
+.parent{
+    width: 600px;
+    height: 500px;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.child{
+    width: 100px;
+    height: 50px;
+    background: yellowgreen;
+    border: 1px solid white;
+
+
+}
+.child:nth-child(1){
+    background: yellow;
+    grid-column: 1/span 3;
+    grid-row: 1/3;
+    justify-self: start;
+    align-self: start;
+    
+}

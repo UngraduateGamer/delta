@@ -1,0 +1,16 @@
+div{
+    background: yellow;
+}
+form{
+    background: rgb(255, 0, 0);
+}
+button,input{
+    background: inherit;
+}
+button:hover{
+    background: yellow;
+    color: black;
+}
+p:nth-of-type(2n){
+    color: green;
+}

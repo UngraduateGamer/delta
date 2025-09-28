@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- merge objects --practise ques -->
+    <script>
+        function mergeObjects(obj1,obj2){
+            let ans = {...obj1,...obj2};
+            return ans;
+        }
+        let res = mergeObjects({name:"rahul",role:"Web Developer"},{country:"India",salary:"4m"})
+        console.log(res);
+        
+    </script>
+</body>
+</html>

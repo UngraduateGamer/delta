@@ -1,0 +1,106 @@
+/* pseudo class is refers to style the state of the element (:) eg-hover,active,disables*/
+/* psudo element refers too style the specific part of the selected elements (::) eg-before,after,first-line*/
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h1,h3{
+    color: #b92b27;
+}
+#signup{
+    background: #b92b27 !important;
+    color: white;
+}
+#login{
+    background: white;
+
+}
+.upvote{
+    background: green;
+    color: white;
+}
+.follow{
+    text-decoration: none;
+}
+button+button{ /* sibling selector*/
+    padding: 10px 20px;
+}
+span>button{
+    padding: 10px 20px;
+}
+/* attribute selector  */
+p a[href="/dan"]{
+    color: magenta;
+}
+input[type]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+button:hover{
+    background: yellow;
+}
+
+body button:hover{
+    background: green !important;
+    color: white;
+}
+h3:hover{
+    text-decoration: underline;
+}
+button:active{
+    background: darkblue;
+}
+
+input:checked{
+    background: rebeccapurple !important;
+    color: white;
+
+}
+
+p:nth-of-type(2n+1){
+    color: green;
+}
+
+p::first-letter{
+    font-size: 30px;
+    color: red;
+}
+p::first-line{
+    color: pink;
+}
+::selection{
+    background: maroon;
+    color: yellow;
+}
+
+::marker{
+    content: "❤︎ ";
+    color: red;
+}
+
+::spelling-error{
+    color: blue;
+    text-decoration: underline;
+}
+
+.videoContainer{
+    width:400px;
+    height: 500px;
+}
+video::cue {
+  font-size: 1rem;
+  color: yellow;
+}
+
+::cue(u) {
+  color: red;
+}
+
+#h4{
+    font-size: 25px;
+    color: red !important;
+}
+h4{
+    color: blue !important;
+}

@@ -1,0 +1,51 @@
+#container{
+    background: grey;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: baseline;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* align-content: end; */
+}
+h1{
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 10px;
+   color: white;
+}
+#red{
+    background: red;
+    align-self: center;
+}
+#green{
+    background: green;
+}
+#blue{
+    background: blue;
+    /* flex-basis: 150px; */
+    flex-grow: 1;
+}
+#yellow{
+    background: yellow;
+    font-size: 2rem !important;
+    /* height: 150px !important; */
+    /* width: 150px !important; */
+    color: black !important;
+    flex-grow: 2;
+}
+#lightseagreen{
+    background: lightseagreen;
+}
+#pink{
+    background: pink;
+}
+#maroon{
+    background: maroon;
+}

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <input type="text" placeholder="enter your task">
+    <button>Add Task</button>
+    <ul>
+        <li>Eat <button class="cross">cross</button></li>
+        <li>Sleep <button class="cross">cross</button></li>
+    </ul>
+    <script>
+      let ul = document.querySelector("ul");
+      let btn = document.querySelector("button");
+      let input = document.querySelector("input");
+      btn.addEventListener("click",()=>{
+          let li = document.createElement("li");
+          li.innerText=input.value;
+          let btnElement = document.createElement("button");
+          btnElement.innerText="cross";
+          btnElement.classList.add("cross");
+          ul.append(li)
+          li.append(btnElement);
+          input.value='';
+      })
+
+      ul.addEventListener("click",(event)=>{
+         if(event.target.nodeName == 'BUTTON'){
+           event.target.parentElement.remove()
+                      
+         }
+          
+      })
+    </script>
+</body>
+</html>

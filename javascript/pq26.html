@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+        // Double and Return arguments -- practise question
+        function doubleAndReturnArgs(argument,...arr){
+            let double = arr.map((element)=>{return element+element}); //double element
+            let ans = [...double,argument];
+            return ans
+        }
+        let arr = [12,15,15,78,12,45,12];
+        let res = doubleAndReturnArgs(5,arr);
+        console.log(res);
+        
+    </script>
+</body>
+</html>

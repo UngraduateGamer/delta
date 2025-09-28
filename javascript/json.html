@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // json - javascript object notation . it is same as a javascript object.
+        // but iska response string me ata hai. 
+        // iske key value pair bhi string me hote hain .
+        // isme ham value me undefined store nai kr sakte 
+        let data = '{"message":"https:\/\/images.dog.ceo\/breeds\/labradoodle\/Cali.jpg","status":"success"}';
+        console.log(data);
+        
+        // json.parse() - is used to covert the json string to javacript object
+        let original = JSON.parse(data);
+        console.log(original.message);
+        
+        //JSON.stringify() - is used to convert the javascript object to string
+        let obj = {
+            name:"rahul",
+            role:"web developer"
+        }
+        let newObj = JSON.stringify(obj)
+        console.log(newObj);
+        
+
+    </script>
+</body>
+</html>

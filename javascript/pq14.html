@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 50;
+        let arr = [1,2,3,4,5,6,2,1,5,3];
+        let count = 0;
+        for(let i = 0;i<arr.length;i++){
+            if(arr[i] === num){
+                arr.splice(i,1)
+            }
+        }
+      
+        
+        for(let res of arr){
+            console.log(res);
+            
+        }
+    </script>
+</body>
+</html>

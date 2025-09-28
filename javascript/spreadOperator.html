@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator - yeh iterative elements jaise array string ko individualy indiualy krta hain
+        let arr= [1,25,3,4,2,4,5465,5,465,14,12,12,12,1,21,21,21,-8,-19];
+        let min = Math.min(...arr); //  yeh min function me array ke har ek elements ko individually pass krta hain 
+        console.log(min);
+        let arr1=[12,15,15,18,65];
+        let arr2 = [...arr1]// they copy all the element and store in the form of array without refernence;
+        arr2[0]=52;
+        console.log(arr1,arr2);
+        
+        let student = {
+            name:"Rahul",
+            role:"Web Developer"
+        }
+        
+    
+      
+        let newObj = {...student,id:521,country:"India",class:32}// they copy all the element and store in the form of array without refernence;;
+        newObj.name="ABC"
+        console.log(newObj);
+        
+        
+        
+    </script>
+</body>
+</html>

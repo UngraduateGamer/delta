@@ -1,0 +1,46 @@
+.element{
+     position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+.inner{
+    position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 5px;
+    color: white;
+    height: 100%;
+  background: #000;
+
+}
+.element::before{
+    
+   content: "";
+  display: block;
+  background: yellow;
+  height: 100%;
+  width: 100%;
+  transform: translate(0);
+  position: absolute;
+  animation: rotate 5s infinite;
+  z-index: 0;
+  
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.test{
+  width: 310px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 0;
+}

@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function diceARoll(){
+            let num = Math.floor(Math.random()*6)+1;
+            console.log(`Your numnber is :${num}`);
+        }
+        diceARoll()
+        function printName(name,age){ // its paramter bcz it just a placehholder
+            console.log(name,age);
+            
+        }
+        function ClcAverage(n1,n2,n3){
+            console.log((n1+n2+n3)/3);
+            
+        }
+
+        function printTable(n){
+            for(let i = 1;i<=10;i++){
+                console.log(n*i);   
+            }
+        }
+        printTable(10)
+        printName("Rahul") //its argument bcz it real data
+    </script>
+</body>
+</html>

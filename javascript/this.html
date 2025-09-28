@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // this - this keyworkd is used for refer the current object . 
+        const student = {
+            name:'rahul', //properties
+            age:19, //properites
+            role:'web developer',//properites
+            salary:'12L per annum',//properites
+            getDetails(){
+                // console.log(name,age,role,salary); //throws error bcz they do not directly access the properties of object.
+                
+                console.log(this.name,this.age,this.role,this.salary);// this - means they point to the current object and access the properties of object
+                
+                
+            }
+        }
+    </script>
+</body>
+</html>

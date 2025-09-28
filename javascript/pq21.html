@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countVowel(str){
+            let count =0;
+            for(let elem of str){
+                if(elem == 'a' || elem =='e'|| elem =='i' || elem =='o'|| elem =='u'){
+                    count++;
+                }
+            }
+            return count;
+        }
+        let res = countVowel("aeiouu");
+        console.log(res);
+        
+    </script>
+</body>
+</html>

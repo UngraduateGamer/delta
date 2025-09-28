@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    border-radius: 20%;
+}
+.btn-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5px;
+    flex-direction: column;
+}
+.flex{
+    display: flex;gap: 5px;
+
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+} 
+
+.flash{
+    background: white;
+}

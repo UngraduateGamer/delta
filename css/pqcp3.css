@@ -1,0 +1,22 @@
+.box{
+    height: 150px;
+    width: 300px;
+    background: gray;
+    border: 5px dotted black;
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 0px  10px;
+    display: inline-block;
+}
+li{
+    display: inline-block;
+  list-style-type: circle; /* ya square, circle */
+  list-style-position: inside; /* ensure bullets appear */
+  margin-right: 20px;}
