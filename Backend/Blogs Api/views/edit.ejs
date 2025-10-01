@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit post</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h2>Edit post</h2>
+    <form action="/posts/<%=post.id%>?_method=PUT" method="post">
+        <input type="text" placeholder="enter username" name="username" class="input" value="<%= post.username %>" >
+        <input type="text" placeholder="enter content" name="content" class="input" value="<%= post.content %>">
+        <button class="btn-submit">Edit</button>
+    </form>
+</body>
+</html>
