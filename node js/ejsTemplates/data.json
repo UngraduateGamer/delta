@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Jean",
+        "last": "Wade"
+      },
+      "email": "jean.wade@example.com",
+      "dob": {
+        "date": "1989-03-31T14:36:41.110Z",
+        "age": 32
+      },
+      "phone": "077 6795 2145",
+      "cell": "0765-319-723",
+      "location": {
+        "street": {
+          "number": 7946,
+          "name": "Pine Rd"
+        },
+        "city": "Inverness",
+        "state": "East Sussex",
+        "country": "United Kingdom",
+        "postcode": "Q2D 1TF",
+        "coordinates": {
+          "latitude": "-41.5145",
+          "longitude": "171.4051"
+        }
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/74.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/74.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/74.jpg"
+      }
+    }
+  ]
+}

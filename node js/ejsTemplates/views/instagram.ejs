@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Copy</title>
+</head>
+<body>
+    <%- include('includes/navbar') %>
+    <!-- (<`%= %>) isse ham variables ko print karwa sakte hain or expression ko evaluate krwa skte hain   -->
+    <!-- (<`% %>) isse ham js ka control flow statement ko execute krwa skte hai  (no output) .  -->
+    <h1>This page belongs to @ <%= username %></h1>
+    <button>Follow</button>
+    <button>Message</button>
+    <%- include('includes/footer') %>
+</body>
+</html>

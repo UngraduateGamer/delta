@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll a Dice</title>
+</head>
+<body>
+    <!-- '<`%- %>  issme ham koi bhi html code ko includes kr sakte hain apne code me  -->
+     <%- include("includes/navbar") %>
+    <h1>Dice value <%= diceValue %> </h1>
+    <% if(diceValue == 6){ %>
+        <p>Roll a dice Again!</p>
+    <%}%>
+</body>
+</html>

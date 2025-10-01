@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello I am 
+        <%= datas.name.title %>
+        <%= datas.name.first %>
+        <%= datas.name.last %>
+    </h1>
+    <p>email : <%= datas.email %></p>
+    <p>phone: <%= datas.phone %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=datas.cell%></p>
+    <p>Location: <%=datas.location.country%></p>
+    <img src="<%=datas.picture.large%>" alt="">
+    <img src="<%=datas.picture.medium%>" alt="">
+    <img src="<%=datas.picture.thumbnail%>" alt="">
+</body>
+</html>
