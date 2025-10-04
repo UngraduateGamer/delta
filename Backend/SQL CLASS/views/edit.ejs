@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit user</title>
+</head>
+<body>
+    <h2>You are about to edit the user :<%=result.email%></h2>
+    <form action="/user/<%=result.id%>?_method=PATCH" method="post">
+        <input type="text" value="<%=result.username%>" name="username" >
+        <input type="password" name="password" placeholder="enter password" >
+        <button>Edit</button>
+    </form>
+</body>
+</html>

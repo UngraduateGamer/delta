@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All user</title>
+    <style>table,tr,td,th{
+        border: 1px solid;
+        border-collapse: collapse;
+        padding:5px;
+    }</style>
+</head>
+<body>
+    <div style="display: flex; align-items: start; gap: 20px;">
+          <table>
+    <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+    </tr>
+    
+  <% for (let user of result) {%>
+    <tr>
+
+        <td><%= user.id %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td>
+            <div style="display: flex; gap: 5px; align-items: center; ">
+
+                <form action="/user/<%=user.id%>/edit" method="get">
+                    <button>Edit Username</button>
+                </form>
+                <form action="/user/<%=user.id%>/delete" method="get">
+                    <button>Delete User</button>
+                </form>
+            </div>
+        </td>
+    </tr>
+        <% }%>
+  </table>
+<button ><a href="http://localhost:8080/user/add">Add new user</a></button>
+
+    </div>
+
+
+</body>
+</html>
