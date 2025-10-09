@@ -1,0 +1,10 @@
+.chat{
+    margin: 10px;
+    background: beige;
+    padding: 10px 20px;
+    
+}
+.msg{
+    background: rgb(94, 127, 156);
+    padding: 10px 20px;
+}

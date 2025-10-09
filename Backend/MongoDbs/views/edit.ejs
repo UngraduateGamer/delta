@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit chat</title>
+</head>
+<body>
+    <h3>Edit your chart </h3>
+    <p>This chats are send from <%=data.from%> to <%=data.to%> </p>
+    <form action="/chat/<%=data.id%>/edit?_method=PUT" method="post">
+        <input type="text" value="<%=data.msg%>" name="msg">
+        <button>Edit</button>
+    </form>
+</body>
+</html>
